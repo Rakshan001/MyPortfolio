@@ -5,7 +5,7 @@
     font-family: 'poppins',sans-serif;
 }
 body{
-    color:#ededed;
+    color:rgb(202, 196, 196);
 
 }
 .header{
@@ -42,4 +42,44 @@ body{
 
 .navbar a:hover{
     color: aqua;
+    /* background-color: orange;
+    border-radius: 20%; */
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(R.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
+}
+
+.home-content  :hover{
+color: aqua;
+transition: .4s;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.home-content h1{
+    font-size: 58px;
+    font-weight: 700;
+    /* margin: -3px 0; */
+}
+
+.home-content p{
+
 }
