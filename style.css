@@ -8,6 +8,7 @@
 body{
     color:white;
     /* color: white; */
+    background-color: bisque    ;
 
 }
 .header{
@@ -245,7 +246,48 @@ transition: .3s;
 
 } */
 
+.skills{
+    padding: 90px;
+    align-items: center;
+    background-color: burlywood;
+    height: 50%;
+    width:100%
+}
 
+.skills h1{
+    font-size: 60px;
+    align-items: center;
+}
+.skills-box{
+    padding: 190px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(46, 28, 3);
+    border-radius: 10%;
+    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 2; */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 4 columns with equal width */
+    grid-template-rows: repeat(2, 1fr);    /* 2 rows with equal height */
+    gap: 1px; /* Add some spacing between items */
+    justify-items: center; /* To center items horizontally */
+}
+
+.skills-box i{
+    font-size: 40px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+}
+
+.skills-box  i:hover{
+    color: aqua;
+}
+
+.skills-box :hover{
+    color: aqua;
+}
 
 
 
