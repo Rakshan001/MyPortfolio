@@ -56,16 +56,16 @@ body{
 
 .navbar a:hover{
     color: aqua;
-    background:linear-gradient(60deg,blue,green);
+    background:linear-gradient(60deg,lightseagreen,green,lightseagreen);
     border-radius: 20%;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 800;
 
 }
 
 .home{
     position: relative;
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
     height: 100vh;
     background: url(pc-img.jpg);
@@ -73,7 +73,9 @@ body{
     background-position: center;
     display: flex;
     align-items: center;
-    padding: 70px 10% 0;
+    padding: 7rem 10% 0;
+    /* padding: 70px 10% 0; */
+
 
 }
 
@@ -244,14 +246,18 @@ transition: .3s;
     padding: 90px;
     align-items: center;
     background:linear-gradient(60deg,lightseagreen,rgb(97, 97, 56),lightseagreen);
-    height: 100vh;
+    height: auto;
     width:100vw;
 }
 
 .skills h1{
-    color: lightseagreen;
+    color: rgb(33, 28, 28);
     font-size: 6rem;
-    padding-left: 40%;
+    display: flex;
+    justify-content: center;
+    /* padding-left: 40%; */
+    border-radius: 50%;
+
 
 
     
@@ -273,6 +279,12 @@ transition: .3s;
     grid-template-rows: repeat(2, 1fr);    /* 2 rows with equal height */
     gap: 1.9rem; /* Add some spacing between items */
     justify-items: center; /* To center items horizontally */
+    background: cover;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+    box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 50px cyan,0 0 100px cyan,0 0 200px cyan;
+
+
+
 
 }
 
@@ -285,6 +297,8 @@ transition: .3s;
 
 .skills-box  i:hover{
     color: aqua;
+    box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 50px cyan,0 0 100px cyan,0 0 200px cyan;
+
 }
 
 .skills-box :hover{
@@ -367,13 +381,22 @@ transition: .3s;
 
 @media(max-width:776px)
 {
-    html{
+    body{
         font-size: 45%;
+        height: auto;
+        width: 100vw;
+    }
+    .skills h1{
+        font-size: 50px;
+    }
+    .skills{
+        height: auto;
+        width: 100vw;
     }
     .skills-box i{
         font-size: 3rem;
-        padding-left: 4rem;
-        padding-bottom: 5rem;
+        padding-left: 6rem;
+        padding-bottom: 2rem;
 
 
     }
