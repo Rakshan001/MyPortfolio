@@ -31,10 +31,10 @@ body{
 
 .logo{
     position: relative;
-    font-size: 25px;
-    color: rgb(228, 199, 32);
+    font-size: 2.5rem;
+    color: rgb(236, 215, 100);
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 1000;
     cursor: default;
     opacity: 0;
     animation: slideRight 1s ease forwards;
@@ -50,13 +50,30 @@ body{
     transition: 0.6s;
     opacity: 0;
     animation: slideTop .4s ease forwards;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
+}
 
 
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .navbar a:hover{
-    color: aqua;
+    color: rgb(30, 255, 255);
     background:linear-gradient(60deg,lightseagreen,green,lightseagreen);
     border-radius: 20%;
     font-size: 30px;
@@ -185,7 +202,8 @@ transition: .3s;
     grid-template-columns: repeat(2,1fr);
     color: white;
     align-items: center;
-    background:url(ai-img.jpg);
+    /* background:url(ai-img.jpg); */
+    background: rgb(44,35,88);
     background-size: cover;
     height:100vh;
     width: 100vw;
@@ -246,7 +264,10 @@ transition: .3s;
 .skills {
     padding: 90px;
     align-items: center;
-    background:linear-gradient(60deg,lightseagreen,rgb(97, 97, 56),lightseagreen);
+
+    /* background:linear-gradient(60deg,lightseagreen,rgb(97, 97, 56),lightseagreen); */
+    background: rgb(44,35,88);
+
     height: auto;
     width:100vw;
 }
@@ -269,7 +290,7 @@ transition: .3s;
     justify-content: center;
     /* background-color: rgb(36, 24, 8); */
     background: linear-gradient(60deg,lightseagreen,rgb(43, 76, 43),lightseagreen);
-    border-radius: 10%;
+    border-radius: 40px;
     display: flex;
     flex-wrap: wrap;
     /* display: grid;
@@ -281,8 +302,9 @@ transition: .3s;
     gap: 1.9rem; /* Add some spacing between items */
     justify-items: center; /* To center items horizontally */
     background: cover;
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+    /* box-shadow: 0 0 5px cyan, 0 0 25px cyan; */
     box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 50px cyan,0 0 100px cyan,0 0 200px cyan;
+    background: transparent;
 
 
 
@@ -294,6 +316,8 @@ transition: .3s;
     padding-left: 5rem;
     padding-bottom: 4rem;
     padding: 2rem;
+    border-radius: 20px;
+
 }
 
 .skills-box  i:hover{
@@ -312,6 +336,13 @@ transition: .3s;
     box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 50px cyan,0 0 100px cyan,0 0 200px cyan;
 
 }
+
+
+/* Projects Section */
+
+
+
+
 
 
 
@@ -387,6 +418,8 @@ transition: .3s;
         height: auto;
         width: 100vw;
     }
+
+
     .skills h1{
         font-size: 50px;
     }
@@ -402,7 +435,7 @@ transition: .3s;
 
     }
     .skills-box{
-        padding: 15rem;
+        padding: 1rem;
         display: flex;
         flex-wrap: wrap;
 
@@ -416,3 +449,46 @@ transition: .3s;
     }
 }
 
+/* Menu botton */
+@media (max-width:500px) {
+    .toggle-button{
+        display: flex;
+    }
+    .toggle-button{
+        color: white;
+        font-weight: 900;
+    }
+
+    .toggle-button:hover{
+        color: orange;
+    }
+
+
+    .navbar{
+        display: none;
+        width: 100%;
+
+    }
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    /* .navbar .a1{
+        flex-direction: column;
+        width: 100%;
+    } */
+    .navbar {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar a{
+        text-align: center;
+    }
+
+    .navbar.active{
+        display: flex;
+    }
+
+}
