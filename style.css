@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +6,9 @@
     font-family: 'poppins',sans-serif;
     scroll-behavior: smooth;
 }
+/* html{
+    font-size: 62.5%;
+} */
 body{
     color:white;
     /* color: white; */
@@ -169,7 +173,6 @@ transition: .3s;
 .btn-box:hover{
     /* box-shadow: 0 0 20px cyan; */
     box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 50px cyan,0 0 100px cyan,0 0 200px cyan;
-
     color: black;
     
 }
@@ -255,8 +258,11 @@ transition: .3s;
 }
 
 .skills h1{
-    font-size: 60px;
-    align-items: center;
+    font-size: 6rem;
+    justify-items: center;
+    align-content: center;
+    /* padding-left: 25rem;
+    padding-right: 19rem; */
 }
 .skills-box{
     padding: 190px;
@@ -269,9 +275,9 @@ transition: .3s;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 2; */
     display: grid;
-    grid-template-columns: repeat(8, 1fr); /* 4 columns with equal width */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
     grid-template-rows: repeat(2, 1fr);    /* 2 rows with equal height */
-    gap: 1px; /* Add some spacing between items */
+    gap: 9px; /* Add some spacing between items */
     justify-items: center; /* To center items horizontally */
 }
 
@@ -347,3 +353,17 @@ transition: .3s;
         opacity: 1;
     }
 }
+
+/* @media(max-width:996px)
+{
+    html{
+        font-size: 55%;
+    }
+}
+
+@media(max-width:776px)
+{
+    html{
+        font-size: 45%;
+    }
+} */
