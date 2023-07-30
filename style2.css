@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
     scroll-behavior: smooth;
+    
 }
 /* html{
     font-size: 62.5%;
@@ -74,7 +75,7 @@ body{
     display: flex;
     align-items: center;
     padding: 7rem 10% 0;
-    /* padding: 70px 10% 0; */
+    padding: 70px 10% 0;
 
 
 }
@@ -395,13 +396,13 @@ transition: .3s;
     }
     .skills-box i{
         font-size: 3rem;
-        padding-left: 6rem;
+        padding-left: 3rem;
         padding-bottom: 2rem;
 
 
     }
     .skills-box{
-        padding: 4rem;
+        padding: 15rem;
         display: flex;
         flex-wrap: wrap;
 
