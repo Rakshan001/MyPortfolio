@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
     scroll-behavior: smooth;
+    user-select: none;
     
 }
 /* html{
@@ -317,24 +318,27 @@ transition: .3s;
 }
 
 .skills h1{
-    color: rgb(33, 28, 28);
+    color:lightseagreen;
     font-size: 6rem;
     display: flex;
     justify-content: center;
     /* padding-left: 40%; */
-    border-radius: 50%;
+    border-radius:10px;
+
+    padding-bottom: 3rem;
+    padding-top: 2rem;
 
 
 
     
 }
 .skills-box{
-    padding: 6.9rem;
+    padding: 3rem;
     align-items: center;
     justify-content: center;
     /* background-color: rgb(36, 24, 8); */
     background: linear-gradient(60deg,lightseagreen,rgb(43, 76, 43),lightseagreen);
-    border-radius: 40px;
+    border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     /* display: grid;
