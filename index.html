@@ -12,18 +12,24 @@
 <body>
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
-        <a href="#" class="toggle-button">
-            <!-- <i class='bx bx-menu' ></i> -->
+        <!-- <a href="#" class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </a>
+        </a> -->
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class='bx bx-menu' id="menu-icon" ></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
+
+
         <nav class="navbar">
-                <a href="#home" class="a1">Home</a>
-                <a href="#about" class="a1">About</a>
-                <a href="#skill" class="a1">Skill</a>
-                <a href="#project" class="a1">Project</a>
-                <a href="#" class="a1">Contact</a>
+                <a href="#home" class="a1" style="--i:0;">Home</a>
+                <a href="#about" class="a1" style="--i:1;">About</a>
+                <a href="#skill" class="a1" style="--i:2;">Skill</a>
+                <a href="#project" class="a1" style="--i:3;">Project</a>
+                <a href="#" class="a1" style="--i:4;">Contact</a>
         </nav>
 
     </header>
@@ -76,10 +82,10 @@
     </div>
 </section>
 
-<section class="project">
+<section class="project" id="project">
     <div class="projectcontainer">
         <div>
-            
+
         </div>
     </div>
 
