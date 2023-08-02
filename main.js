@@ -6,6 +6,14 @@ var typed = new Typed(".text",{
     backDelay:100,
     loop:true
 });
+
+var typed = new Typed(".text2",{
+    strings: ["Full Stack Web Developer"],
+    typeSpeed:50,
+    backSpeed:70,
+    backDelay:1000,
+    loop:true
+});
 });
 
 // const toggleButton = document.getElementsByClassName('toggle-button')[0]

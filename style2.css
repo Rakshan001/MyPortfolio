@@ -273,6 +273,9 @@ transition: .3s;
 .about-text h2 span{
     color: cyan;
 }
+.text2{
+    color: cyan;
+}
 
 .about-text h4{
     margin: 20px 0 20px;
@@ -605,6 +608,13 @@ transition: .3s;
 
         transition-delay: calc(0.15s *var(--i));
 
+    }
+    .about-text h2 h4{
+        font-size: 3rem;
+    }
+
+    .about-text p{
+        font-size: 2.1rem;
     }
 
 
