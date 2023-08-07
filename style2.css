@@ -14,7 +14,9 @@
 body{
     color:white;
     /* color: white; */
-    background-color: bisque    ;
+    background-color: bisque;
+    background: url(pc-img.jpg);
+
 
 }
 .header{
@@ -513,11 +515,153 @@ transition: .3s;
 }
 
 /* Contact */
+
+
 .contact_container{
     width: 100vw;
     height: 100vh;
     background: rgb(44,35,88);
+    color: white;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    overflow: hidden;
+    transition: 0.3s ease;
 }
+label{
+    padding: 6px;
+}
+
+.contacth1{
+    position: absolute;
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    top: 8%;
+}
+
+
+
+.contact_container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center ;
+    flex-direction: row;
+}
+.contact-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 8rem;
+    
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 15vh; */
+}
+
+.contactabout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.conatactform form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 50px 50px  30px rgba(0,0,0,0.25);
+    z-index: 10;
+    backdrop-filter: blur(15px);
+
+
+    padding:1rem 6rem 1rem 6rem;
+    border-radius: 15px;
+    top: -140%;
+    left: 30%;
+    margin-left: 7rem;
+
+    
+}
+.conatactform form input{
+    padding: 1rem;
+    border-radius: 54px;
+}
+
+.conatactform form button{
+    padding: 1.1rem ;
+    font-weight: 900;
+    border-radius: 50px;
+}
+
+.contactabout{
+    position: relative;
+    left: 0;
+    margin-right: 30rem;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 1.5rem;
+    color: aqua;
+    list-style: none;
+}
+
+.contacticon{
+    position: relative;
+    right: 2%;
+    margin-left: 1rem;
+}
+
+textarea{
+    border-radius: 5px;
+}
+
+.conatactform input:hover{
+    box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 50px cyan,0 0 100px cyan,0 0 200px cyan;
+
+}
+
+.conatactform textarea:hover{
+    box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 50px cyan,0 0 100px cyan,0 0 200px cyan;
+
+}
+
+.conatactform button:hover{
+    box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 50px cyan,0 0 100px cyan,0 0 200px cyan;
+    background-color: aqua;
+
+}
+
+.contacticon{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
