@@ -121,10 +121,11 @@ body{
 }
 .navbar a:hover{
     color: rgb(30, 255, 255);
-    background:linear-gradient(60deg,rgb(132, 242, 237),rgb(78, 178, 78),rgb(132, 242, 237));
+    /* background:linear-gradient(60deg,rgb(132, 242, 237),rgb(78, 178, 78),rgb(132, 242, 237)); */
+    color: rgb(82, 82, 184);
     border-radius: 20%;
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 900;
 
 }
 
@@ -335,6 +336,7 @@ transition: .3s;
 
 
 
+
     
 }
 .skills-box{
@@ -357,6 +359,8 @@ transition: .3s;
     background: cover;
     /* box-shadow: 0 0 5px cyan, 0 0 25px cyan; */
     box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 50px cyan,0 0 100px cyan,0 0 200px cyan;
+    box-shadow: 50px 50px  30px rgba(0,0,0,0.25);
+
     background: transparent;
 
 
@@ -504,6 +508,8 @@ transition: .3s;
 
 .project_content:not(:hover){
     transform: scale(0.8);
+    box-shadow: 50px 50px  30px rgba(0,0,0,0.3);
+
 }
 
 .project_container a:hover{
@@ -549,6 +555,9 @@ label{
     align-items: center;
     text-align:center ;
     flex-direction: column;
+
+        
+    
 }
 .contact-content {
     position: relative;
@@ -588,7 +597,7 @@ label{
     padding:1rem 6rem 1rem 6rem;
     border-radius: 15px;
     top: -120%;
-    left: 30%;
+    left: 25%;
     margin-left: 7rem;
 
     
@@ -596,12 +605,17 @@ label{
 .conatactform form input{
     padding: 1rem;
     border-radius: 54px;
+    /* box-shadow: 50px 50px  30px rgba(0,0,0,0.25); */
+
+
 }
 
 .conatactform form button{
     padding: 1.1rem ;
     font-weight: 900;
     border-radius: 50px;
+    /* box-shadow: 50px 50px  30px rgba(0,0,0,0.25); */
+
 }
 
 .contactabout{
@@ -618,7 +632,7 @@ label{
 
 .contacticon{
     position: relative;
-    right: 2%;
+    right: 6%;
     margin-left: 1rem;
 }
 
@@ -888,6 +902,12 @@ textarea{
         padding: 0;
         margin: 0;
     }
+    .contact_container{
+
+        
+        
+    }
+
 
     .contact-content {
         position: relative;
@@ -896,6 +916,10 @@ textarea{
         align-items: center;
         text-align: center;
         flex-direction: column;
+        width: 100%;
+        max-width:100%;
+        padding-right: 60%;
+        
         /* gap: 8rem; */
         
         /* flex-wrap: wrap; */
@@ -910,25 +934,51 @@ textarea{
         justify-content: center;
         align-items: center;
         text-align: justify;
-        font-size: 1.5rem;
+        font-size:2rem;
         color: aqua;
         list-style: none;
+        padding-bottom: 3rem;
     }
     
     .contacticon{
         position: relative;
-        bottom: 0%;
-        left: 20%;
-        margin-top: 60vh;
+
+        /* top: 90%; */
+        bottom: 0;
+        left: 0;
+        right: 10%;
+        margin: 0;
+        margin-top: 50vh;
+        margin-left: 0;
+        /* padding: 2rem; */
+        padding-right: 8rem;
+        font-weight: 900;
+        font-size: 3rem;
+
+    }
+    label{
+        font-weight: 900;
+        font-size: 2rem;
+    }
+    .contacticon .home-sci{
+        margin: 0;
+        padding: 0;
+        padding-right: 6rem;
+        padding-top: 3rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
     .conatactform form{
         position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* text-align: center; */
         background-color: antiquewhite;
         background: rgba(255,255,255,0.05);
         box-shadow: 50px 50px  30px rgba(0,0,0,0.25);
@@ -936,18 +986,18 @@ textarea{
         backdrop-filter: blur(15px);
     
     
-        padding:1rem 6rem 1rem 6rem;
-        border-radius: 15px;
-        top: 40%;
-        left: 15%;
-        margin-bottom: 90vh;
+        /* padding:1rem 6rem 1rem 6rem; */
+        /* border-radius: 15px; */
+        top: 30%;
+        left:0;
+        /* margin-bottom: 90vh; */
+        right: 5%;
+        /* margin-left: 2rem; */
+        margin: auto 2rem auto 3rem;
 
-        /* top: -120%; */
-        /* left: 30%; */
-        /* margin-left: 7rem; */
-    
         
     }
+   
 
 
 }
