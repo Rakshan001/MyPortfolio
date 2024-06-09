@@ -376,7 +376,9 @@ transition: .3s;
 }
 
 .skills h1{
-    color:lightseagreen;
+    /* color:lightseagreen; */
+    color: white;
+    
     font-size: 6rem;
     display: flex;
     justify-content: center;
@@ -396,10 +398,11 @@ transition: .3s;
   /* filter: blur(10px); */
     z-index: -1; 
 
-
-
-
     
+}
+.skills:hover h1{
+    color: #007bff;
+
 }
 .skills-box{
     padding: 3rem;
