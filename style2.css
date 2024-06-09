@@ -21,8 +21,8 @@ body{
     /* height: 2000px; Just to make the page scrollable for demonstration */
      background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNm52dmJqZDBkZHJpaDgyNHcwdnpjejRseGZ2cGRkM3h2bHpneHg3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9bTjZrytydVRK/giphy.webp) no-repeat;
     background-attachment: fixed; 
-    /* background-position: top left; */
-    /* background-size: 100px 100px; */
+    background-position: top left;
+    background-size: 100px 100px;
 
 
 }
@@ -475,7 +475,7 @@ transition: .3s;
     /* background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHExcmlhNml6Nms1eDl4NDg4Njc2bXZ4dnFsMDQyam93OWprY3oxcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hQWrw0tOmiH8b5qMxm/giphy.webp); */
     background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNm52dmJqZDBkZHJpaDgyNHcwdnpjejRseGZ2cGRkM3h2bHpneHg3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9bTjZrytydVRK/giphy.webp);
     /* margin: 200px auto 100px; */
-    padding: 120px;
+    /* padding: 120px; */
     position: relative;
    
 
@@ -494,6 +494,7 @@ transition: .3s;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     grid-gap: 20px;
+    /* overflow: hidden; */
 }
 .project .card{
     position: relative;
@@ -964,25 +965,13 @@ textarea{
     .about-text p{
         font-size: 2.1rem;
     }
-    .project_container{
-        padding: 0;
-        margin: 0;
-
-    }
-    .project_content{
-        padding: 3rem;
-
-    }
+    
 
     .project{
         padding: 0;
         margin: 0;
     }
-    .contact_container{
-
-        
-        
-    }
+    
 
 
     .contact-content {
