@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style2.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Q3ItPkeJ9VJyNlZ2V0cHg38Jy3Ypj2Bq3Gu6VbMGDRqVYD4Ynbm2X+T4jQvzcrG1q9GoLNw8tJXjMz+kN1CysA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 </head>
 <body>
     <header class="header">
@@ -60,7 +63,7 @@
             <p>As a passionate web developer, I thrive on crafting immersive digital experiences that push boundaries and captivate users. My journey began with a curiosity that evolved into a deep understanding of HTML, CSS, and JavaScript. From front-end designs to back-end development, I've honed skills in building responsive websites and robust web applications using technologies like React and Django. Troubleshooting bugs and optimizing performance excite me. I am committed to continuous learning, embracing emerging technologies, and making a positive impact on the digital world. With unwavering dedication, I eagerly collaborate with like-minded individuals to create intuitive and efficient web solutions for users worldwide.</p>
             <a href="#" class="btn-box"> More About Me</a></div>
             <div class="aboutimg">
-                <!-- <img src="myname.jpg" alt=""> -->
+                <img src="myname.jpg" alt="">
             </div>
     </section> 
 
@@ -84,9 +87,11 @@
 </div>
 </section>
 
-
+<hr>
+<hr>
 
 <section class="project45" id="project">
+    
          <h1>My Projects</h1>
     <div class="project">
         <div class="card">
@@ -134,45 +139,113 @@
 </section>
 
 
-<section class="contact" id="contact">
-    
-    
-    <div class="contact_container">
-    <label class="contacth1" for="contact_container"> Contact Me</label>
 
-        <div class="contact-content">
-            <div class="contactabout ">
-                <li>Name:Rakshan</li>
-                <li>Age:20</li>
-                <li>Email:rakshanshetty2003@gmail.com</li>
-            </div>
-        <div class="conatactform">
-            <form action="">
-                <label for="name">Your Name</label>
-                <input class="name" type="text" placeholder="Enter your name here" required>
-                <label for="email" >Enter your Email</label>
-                <input class="email" type="email" placeholder="example@gmail.com" required>
-                <label for="textarea1">Enter the Mssg Here</label>
-                <textarea class="textarea1" name="" cols="45" rows="8"></textarea><br/>
-                
-                <button type="submit">SEND</button>
-            </form>
-          </div>
-          <div class="contacticon">
-            <label class="contacticon" for="home-sci">Connect Me</label>
-          <div class="home-sci">
-            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
-            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-            <a href="#"><i class='bx bxl-github'></i></a>
-            
-            <a href="https://www.linkedin.com/in/rakshan-shetty-953864225" target="_blank"><i class='bx bxl-linkedin' ></i>
-</a>
-        </div>
-    </div>
+
+<section class="contact" id="contact">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about1">
+                    <h1 class="logo-text">My<span>Portfolio</span></h1>
+                    <p class="details1">Thank You for Visiting My Portfolio</p>
+                    <div class="contact">
+                        <span class="details"><i class='bx bxs-phone-call' ></i>+91 9632612163</span><br>
+                        <span class="details"><i class='bx bxs-envelope' >&nbsp;rakshanshetty2003@gmail.com</i></span><br>
+                        
+                        <span class="details"><i class='bx bx-current-location' >Bantwal India</i></span>
+                    </div>
+                    <div class="socials">
+                        
+                    </div>
+                </div>
+
+                <div class="footer-section links">
+                    <h2 class="spancolor">Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li>
+                            <div class="home-sci">
+                                <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                                <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                                <a href="#"><i class='bx bxl-github'></i></a>
+                                
+                                <a href="https://www.linkedin.com/in/rakshan-shetty-953864225" target="_blank"><i class='bx bxl-linkedin' ></i>
+                    </a> </div>
                     
+                        </li>
+                    </ul>
+                  
+                      
+
+
+                </div>
+
+                <div class="footer-section contact-form">
+                    <h2 class="spancolor contactus">Contact Us</h2>
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="example@gmail.com" required>
+                        <input type="tel" id="phone" placeholder="Phone No." required>
+                        <textarea id="message" rows="4" placeholder="Enter message Here" required></textarea>
+                        <!-- <div class="connect ">
+                            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+                            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+                        </div> -->
+                        <button type="submit" class="btn">Send</button>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <div class="footer-bottom">
+            &copy; 2024 My<span class="spancolor">Portfolio</span>. Designed by <span class="spancolor">Rakshan Shetty</span>.
+        </div>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+
+    
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script><!-- Sweet Alert -->
+    <script>
+        function sendEmail() {
+            Email.send({
+                SecureToken: "0d7f93aa-24ba-49e5-a554-d8e2190d585f",
+               
+                To: 'anonymous10unknown10@gmail.com',
+                From: "unknownimmortal101@gmail.com",
+                Port: 2525, // Use the correct port for your email service provider
+                EnableSsl: true, // Enable SSL/TLS
+
+                Subject: "Contacted from the Portfolio",
+                Body: "Name: " + document.getElementById("name").value +
+                    "<br> Email: " + document.getElementById("email").value +
+                    "<br> Phone No: " + document.getElementById("phone").value +
+                    "<br> Message: " + document.getElementById("message").value
+            }).then(
+                message =>{
+                    if(message='OK'){
+                        swal("Successfull", "Your Message sent successfully", "success");
+                    }
+                    else{
+                        swal("Something Wrong", "Your Message Not sent", "error");
+
+                    }
+                } 
+
+            );
+        }
+    </script>
+    
+    
 </section>
 
 
