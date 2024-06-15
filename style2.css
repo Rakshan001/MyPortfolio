@@ -27,58 +27,58 @@ body{
 
 
 }
-.header{
+
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 0.9rem 10%;
-    background:rgb(42, 199, 191);
+    /* background: rgba(0, 0, 0, 0.9); */
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    /* backdrop-filter: blur(10px); */
 }
 
-
-/* menu  */
-.header::before{
+.header::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* background: rgba(0, 0,0, 0.2); */
-    backdrop-filter: blur(50px);
+    /* backdrop-filter: blur(50px); */
     z-index: -1;
 }
 
-.header::after{
+.header::after {
     content: '';
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg,transparent,rgba(255,255,255,0.4),transparent);
-    transition: 0.5s ;
-
+    background: linear-gradient(90deg, transparent, rgba(34, 220, 245, 0.6), transparent);
+    transition: 2.9s;
 }
-    .header:hover:after{
-        left: 100%;
-    }
 
+.header:hover::after {
+    left: 100%;
+}
 
-#check{
+#check {
     display: none;
 }
 
-
-.logo{
+.logo {
     position: relative;
     font-size: 2rem;
-    color: rgb(236, 215, 100);
+    color: rgb(45, 251, 251);
     text-decoration: none;
     font-weight: 1000;
     cursor: default;
@@ -86,56 +86,101 @@ body{
     animation: slideRight 1s ease forwards;
 }
 
-.navbar a{
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
     color: white;
     display: inline-block;
-    font-size: 25px;
+    font-size: 1.5rem;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 2.9rem;
     transition: 0.6s;
     opacity: 0;
-    animation: slideTop .4s ease forwards;
+    animation: slideTop 0.4s ease forwards;
     animation-delay: 1s;
+    position: relative;
 }
 
-
-
-/* .toggle-button{
+.navbar a::before {
+    content: '';
     position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-.toggle-button .bar{
-    height: 3px;
+    left: 0;
+    bottom: -6px;
     width: 100%;
-    background-color: white;
-    border-radius: 10px;
-} */
+    height: 2px;
+    background: rgb(30, 255, 255);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
 
+.navbar a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
 
-.icons{
+.icons {
     position: absolute;
     right: 5%;
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: white;
     cursor: pointer;
     display: none;
 }
-.navbar a:hover{
-    color: rgb(30, 255, 255);
-    /* background:linear-gradient(60deg,rgb(132, 242, 237),rgb(78, 178, 78),rgb(132, 242, 237)); */
-    color: rgb(82, 82, 184);
-    border-radius: 20%;
-    font-size: 30px;
-    font-weight: 900;
 
+.navbar a:hover {
+    color: rgb(30, 255, 255);
 }
+
+@keyframes slideRight {
+    from { opacity: 0; transform: translateX(-100px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideTop {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 1.9rem 5%;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 300px;
+        background: rgba(42, 199, 191, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.5s;
+    }
+
+    .header #check:checked ~ .navbar {
+        right: 0;
+    }
+
+    .icons {
+        display: block;
+    }
+
+    .navbar a {
+        font-size: 1.5rem;
+        margin: 1.1rem 0;
+        animation: slideRight 0.5s ease forwards;
+        animation-delay: 0.5s;
+    }
+}
+
+
+/* ****************** */
 
 .home{
     position: relative;
@@ -265,6 +310,8 @@ transition: .3s;
     width: 100vw;
     gap: 1.5rem;
     padding: 2rem;
+    margin-left: 2rem;
+
 }
 
 
@@ -287,11 +334,16 @@ transition: .3s;
     font-size: 50px;
     font-weight: 600;
     padding-left: 20px;
+    
 
 }
 
 .about-text h2 span{
     color: cyan;
+}
+.about-text span{
+    color: cyan;
+    font-weight: 600;
 }
 .text2{
     color: cyan;
@@ -309,8 +361,9 @@ transition: .3s;
 .about-text p{
     font-size: 25px;
     padding-left: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     row-gap: 90px;
+    line-height: 1.6;
     
 
 }
@@ -340,14 +393,19 @@ transition: .3s;
     overflow: hidden;
 
     padding-bottom: 20px;
-    max-width: 630px;
-    margin-top: 1rem;
+    max-width: 530px;
+    margin-top: 0.1rem;
     padding-top: 1rem;
-
+    margin-left: 80%;
+    
 
     /* border-radius: 8px; */
     
 }
+.about .btn-box{
+    margin-left: 4%;
+}
+
 
 
 /* Skills Part */
@@ -378,6 +436,8 @@ transition: .3s;
 .skills h1{
     /* color:lightseagreen; */
     color: white;
+    color: cyan;
+
     
     font-size: 6rem;
     display: flex;
@@ -402,6 +462,9 @@ transition: .3s;
 }
 .skills:hover h1{
     color: #007bff;
+    color: cyan;
+    font-weight: 900;
+
 
 }
 .skills-box{
@@ -501,7 +564,7 @@ transition: .3s;
 
 .project45 h1{
     margin: 0 auto;
-    font-size: 50px;
+    font-size: 5rem;
     text-align: center;
     padding-top: 3rem;
     
@@ -560,6 +623,17 @@ transition: .3s;
 
 }
 
+.project .detail span h2 a{
+    text-decoration: none;
+    margin-top: 2rem;
+    color: #03a9f4;
+
+}
+
+
+
+
+
 .project .card .content{
     position: relative; 
     /* above line is used to bring the content front */
@@ -598,6 +672,20 @@ transition: .3s;
 
 .project .card:hover .content .detail h2 span{
     color: #fff;
+}
+
+.project .card .content .detail h2 span a{
+    color: #3dbdf5;
+    text-decoration: none;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    padding: 2rem;
+    padding-bottom: -2rem;
+
+}
+.project .card .content .detail:hover h2 span{
+    color: aqua;
+
 }
 
 
@@ -762,7 +850,7 @@ span i{
     color: #fff;
     cursor: pointer;
     font-size: 1rem;
-    margin-left: 40%;
+    margin-left: 50%;
 }
 
 .btn:hover {
@@ -776,13 +864,19 @@ span i{
 }
 
 li{
-    padding-top: 2rem;
+    padding-top: 0.9rem;
 }
 .details1 p{
     padding-top: 2rem;
 }
 .details i {
     margin-top: 1.5rem;
+}
+
+.footer-bottom{
+    padding: 2rem;
+    margin-bottom:-15rem ;
+    padding-bottom: -20rem;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -816,6 +910,13 @@ justify-content: center;    }
     .logo-text {
         font-size: 3rem;
         margin-bottom: 20px;
+    }
+    .footer .links {
+        font-size: 1.9rem;
+    }
+    .footer .container .contact {
+        font-size: 1.9rem;
+
     }
 
 
@@ -957,16 +1058,37 @@ justify-content: center;    }
             width: 100%;
             margin-bottom: 2rem;
         }
+        
         .aboutimg img {
-            width: 100%;
+            width: 70%;
             height: auto;
             padding-top: 20rem;
             padding-bottom: 20rem;
+            /* margin-right: 233rem; */
+            margin-left: 15%;
             
         }
         .aboutimg{
-            margin-bottom: 150px;
+            margin-bottom: 350px;
+            
         }
+        .about-text h2 h4{
+            font-size: 3rem;
+        }
+    
+        .about-text p{
+            font-size: 2.1rem;
+            line-height: 1.6;
+        }
+        .about .btn-box{
+            margin-left: 40%;
+            margin-bottom: 2rem;
+        }
+    
+        
+
+
+
     }
 
     
@@ -1078,19 +1200,22 @@ justify-content: center;    }
         transition-delay: calc(0.15s *var(--i));
 
     }
-    .about-text h2 h4{
-        font-size: 3rem;
-    }
+    
 
-    .about-text p{
-        font-size: 2.1rem;
-    }
     
 
     .project{
         padding: 0;
         margin: 0;
     }
+    .project .card .content .detail h2 span a{
+        color: #3dbdf5;
+        text-decoration: none;
+        margin-top: 2rem;
+        font-size: 1.6rem;
+    
+    }
+    
     
 
 
