@@ -1171,8 +1171,9 @@ justify-content: center;    }
     .navbar{
         position: absolute;
         top: 100%;
-        left: 0;
-        width: 100%;
+        /* left: 0; */
+        right: 0;
+        width: 30%;
         height: 0;
         background: rgba(0, 0,0, 0.2);
         backdrop-filter: blur(50px);
@@ -1183,7 +1184,7 @@ justify-content: center;    }
     }
 
     #check:checked~.navbar{
-        height: 17.7rem;
+        height: 19.7rem;
 
     }
 
