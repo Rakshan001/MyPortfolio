@@ -1015,7 +1015,10 @@ justify-content: center;    }
         height: auto;
         width: 100vw;
     }
+    .skills{
+        margin-top: 0rem;
 
+    }
 
     .skills h1{
         font-size: 50px;
@@ -1063,13 +1066,13 @@ justify-content: center;    }
             width: 70%;
             height: auto;
             padding-top: 20rem;
-            padding-bottom: 20rem;
+            padding-bottom: 8rem;
             /* margin-right: 233rem; */
             margin-left: 15%;
             
         }
         .aboutimg{
-            margin-bottom: 350px;
+            margin-bottom:20.5rem;
             
         }
         .about-text h2 h4{
@@ -1081,7 +1084,7 @@ justify-content: center;    }
             line-height: 1.6;
         }
         .about .btn-box{
-            margin-left: 40%;
+            margin-left: 20%;
             margin-bottom: 2rem;
         }
     
