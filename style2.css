@@ -580,7 +580,7 @@ transition: .3s;
     grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
     grid-gap: 20px;
     /* overflow: hidden; */
-    padding-bottom: 14rem;
+    padding-bottom: 9rem;
     padding-top:5rem ;
 
 }
@@ -687,6 +687,16 @@ transition: .3s;
     color: aqua;
 
 }
+
+.certification{
+    color: white;
+    font-size: 3rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 
 
 
