@@ -45,3 +45,22 @@ function displayResume() {
 }
 
 
+// ******************************
+// video playing  code
+function redirectToWebsite(url) {
+    window.location.href = url;  // Use the provided URL for redirection
+}
+
+function showVideoPopup(videoUrl) {
+    var videoPopup = document.getElementById('videoPopup');
+    var videoFrame = document.getElementById('videoFrame');
+    videoFrame.src = videoUrl;  // Set the video URL
+    videoPopup.style.display = 'flex';
+}
+
+function closeVideoPopup() {
+    var videoPopup = document.getElementById('videoPopup');
+    var videoFrame = document.getElementById('videoFrame');
+    videoFrame.src = '';
+    videoPopup.style.display = 'none';
+}

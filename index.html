@@ -120,7 +120,15 @@
                 <img src="calculator.jpg" alt="">
             </div>
             <div class="detail">
-                <h2>Calculator<br><span><a href="https://sgpa-calculator.pages.dev/" target="_blank">Click Here</a></span></h2>
+                <h2>Calculator</h2>
+                <div class="cardbutton">
+                    <div class="cardcontainer">
+                        <button class="button" onclick="redirectToWebsite('https://rakshan001.github.io/calculator/')">Visit Here</button>
+                    </div>
+                    <div class="cardcontainer">
+                        <button class="button" onclick="showVideoPopup('videos/calculator.mp4')">Watch Demo</button>
+                    </div>
+                </div>   
             </div>
             </div>
         </div>
@@ -135,17 +143,18 @@
             <img src="myname.jpg" alt="">
         </div>
         <div class="detail">
-            <h2>SGPA Calculator <br><span> <a href="https://sgpa-calculator.pages.dev/" target="_blank">Click Here</a></span></h2>
+            <h2>SGPA Calculator </h2>
+            <div class="cardbutton">
+                <div class="cardcontainer">
+                    <button class="button" onclick="redirectToWebsite('https://sgpa-calculator.pages.dev/')">Visit Here</button>
+                </div>
+                <div class="cardcontainer">
+                    <button class="button" onclick="showVideoPopup()">Watch Demo</button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
 
 
 <!-- card 3 -->
@@ -157,12 +166,51 @@
         <img src="myname.jpg" alt="">
     </div>
     <div class="detail">
-        <h2>NextTrip <br><span><a href="https://sgpa-calculator.pages.dev/" target="_blank">Click Here</a></span></h2>
+        <h2>NextTrip</h2>
+
+        <div class="cardbutton">
+            <div class="cardcontainer">
+                <button class="button" onclick="redirectToWebsite()">Visit Here</button>
+            </div>
+            <div class="cardcontainer">
+                <button class="button" onclick="showVideoPopup('videos/NextTrip.mp4')">Watch Demo</button>
+            </div>
+        </div>
     </div>
     </div>
 </div>
 </div>
+
+
 </section>
+
+
+<!-- Video Pop Up part -->
+
+
+<div id="videoPopup" class="video-popup">
+    <div class="video-popup-content">
+        <span class="close-button" onclick="closeVideoPopup()">&times;</span>
+        <iframe id="videoFrame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+
+<!-- ********************** -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Certificates -->
 <section class="certificate" id="certificate">

@@ -1,4 +1,13 @@
 
+:root{
+    --blue12-color:#007bff;
+}
+
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +15,7 @@
     font-family: 'poppins',sans-serif;
     scroll-behavior: smooth;
     user-select: none;
+    /* overflow: hidden; */
     
 }
 /* html{
@@ -16,14 +26,18 @@ body{
     /* color: white; */
     background-color: bisque;
     /* background: url(pc-img.jpg); */
-
+   
     margin: 0;
     height: 2000px;
      /* Just to make the page scrollable for demonstration */
      background: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNm52dmJqZDBkZHJpaDgyNHcwdnpjejRseGZ2cGRkM3h2bHpneHg3MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9bTjZrytydVRK/giphy.webp) repeat;
     background-attachment: fixed; 
     background-position: top left;
+    
     background-size: 100px 100px;
+
+    overflow-x: hidden;
+    
 
 
 }
@@ -564,9 +578,10 @@ transition: .3s;
 
 .project45 h1{
     margin: 0 auto;
-    font-size: 5rem;
+    font-size: 3.5rem;
     text-align: center;
     padding-top: 3rem;
+    margin-bottom: 1px;
     
 }
 
@@ -582,6 +597,8 @@ transition: .3s;
     /* overflow: hidden; */
     padding-bottom: 9rem;
     padding-top:5rem ;
+
+    
 
 }
 .project .card{
@@ -605,6 +622,21 @@ transition: .3s;
     text-align: center;
     box-shadow: 0 10px 40px rgba(0, 0,0, 0.5);
     overflow: hidden;
+
+
+
+  /* border color */
+  padding: 30px;
+  border-radius: 0.9em;
+  transition: all 0.4s ease;
+  border-image: linear-gradient(90deg, #03a9f4, #f441a5) 1;
+  border-width: 1.2px;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+
+
+
     
 }
 .project .card .layer{
@@ -613,19 +645,25 @@ transition: .3s;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#03a9f4,#e91ee3);
+    background: linear-gradient(#03a9f4,#ee20e7a5,transparent);
     z-index: 1;
     transition: 0.5s;
 }
 
+
 .project .card:hover .layer{
     top: 0;
+    
+
+    
 
 }
 
-.project .detail span h2 a{
+
+
+.project .detail  h2 {
     text-decoration: none;
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: #03a9f4;
 
 }
@@ -645,6 +683,7 @@ transition: .3s;
     font-size: 18px;
     line-height: 24px;
     color: #fff;
+    white-space: normal;
 }
 
 
@@ -656,6 +695,7 @@ transition: .3s;
     overflow: hidden;
     border: solid 2px white;
     box-shadow: 0 10px 40px rgba(0, 0,0, 0.2);
+    margin-top: 0.6em;
 }
 
 .project .card .content .detail h2{
@@ -784,6 +824,7 @@ span i{
 
 .spancolor{
     color: #007bff;
+    
 
 }
 
@@ -885,8 +926,8 @@ li{
 
 .footer-bottom{
     padding: 2rem;
-    margin-bottom:-15rem ;
-    padding-bottom: -20rem;
+    margin-bottom:-6rem ;
+    /* padding-bottom: -20rem; */
 }
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -1241,10 +1282,188 @@ justify-content: center;    }
     
     
     
+   
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *********************************** */
+/* Style button of visite website project card */
+.cardbutton{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.cardcontainer button {
+    font-size: 1em;
+    padding: 0.6em 0.8em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #000000b4;
+  }
+  
+  .cardcontainer {
+    position: relative;
+    padding: 3px;
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    border-radius: 0.9em;
+    transition: all 0.4s ease;
+    max-width: fit-content;
+  }
+  
+  .cardcontainer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    border-radius: 0.9em;
+    z-index: -10;
+    filter: blur(0);
+    transition: filter 0.4s ease;
+  }
+  
+  .cardcontainer:hover::before {
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    filter: blur(1.2em);
+  }
+  .cardcontainer:active::before {
+    filter: blur(0.2em);
+  }
+  
+
+  /* **** */
+
+/* .cardcontainer button {
+    font-size: 1em;
+    padding: 0.6em 0.8em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #000000b4;
+} */
+
+.button:hover {
+    /* background: #00796b; */
+}
+
+.video-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.video-popup-content {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    background: #fff;
+    background:transparent;
+
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    /* color: #333; */
+    /* color: red; */
+    color: var(--blue12-color);
+    font-size: 34px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.close-button:hover{
+color: cyan;
+
+}
+@media (max-width: 768px) {
     
+    /* .video-popup {
+        width: 60%;
+        height: auto;
+    } */
+    .video-popup-content {
+        width: 90%;
+        height: auto;
+    }
+    .video-popup-content iframe{
+        width: 100%;
+        /* height: auto; */
+
+    }
+     /* project card */
+     .cardbutton {
+        flex-direction: column; 
+        margin-top: 2rem;
+        align-items: center;
+        
+    }
+    .cardcontainer{
+        margin-bottom: 1rem;
+
+    }
+    .cardcontainer button{
+        padding: 1rem;
+        font-size: 2rem;
+
+    }
+    .close-button {
+        top: 40px;
+        right: 10px;
+        font-size: 30px;
+
+
+    }
 
 
 
+}
 
 
+/* -------------------Scroll bar---------------- */
+::-webkit-scrollbar{
+
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: black;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(60deg, #03a9f4, #f441a5,var(--blue12-color));
+    border-radius: 10px;
 }
