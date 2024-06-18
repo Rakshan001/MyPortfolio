@@ -617,7 +617,7 @@ transition: .3s;
 
 
 
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     text-align: center;
     box-shadow: 0 10px 40px rgba(0, 0,0, 0.5);
@@ -626,7 +626,7 @@ transition: .3s;
 
 
   /* border color */
-  padding: 30px;
+  padding: 20px;
   border-radius: 0.9em;
   transition: all 0.4s ease;
   border-image: linear-gradient(90deg, #03a9f4, #f441a5) 1;
@@ -680,10 +680,10 @@ transition: .3s;
 }
 
 .project .card .content p{
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
     color: #fff;
-    white-space: normal;
+    /* white-space: normal; */
 }
 
 
@@ -719,7 +719,7 @@ transition: .3s;
     text-decoration: none;
     margin-top: 2rem;
     font-size: 1.1rem;
-    padding: 2rem;
+    /* padding: 2rem; */
     padding-bottom: -2rem;
 
 }
@@ -1427,7 +1427,7 @@ color: cyan;
     }
      /* project card */
      .cardbutton {
-        flex-direction: column; 
+        flex-direction: row; 
         margin-top: 2rem;
         align-items: center;
         
