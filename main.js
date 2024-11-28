@@ -26,7 +26,9 @@ var typed = new Typed(".text2",{
 
 function displayResume() {
     // Replace with the path to your PDF file
-    const pdfPath = 'Rakshans_Resume.pdf';
+    // const pdfPath = 'Rakshans_Resume.pdf';
+    const pdfPath = 'My_Resume.pdf';
+
 
     // Create a link element
     const link = document.createElement('a');
