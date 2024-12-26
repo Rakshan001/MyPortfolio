@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 var typed = new Typed(".text",{
-    strings: ["Full Stack Web Developer","Programmer"," AIML Engineer"],
+    strings: ["Full Stack Web Developer","Programmer"," AIML Engineer","RPA Developer"],
     typeSpeed:80,
     backSpeed:70,
     backDelay:100,
@@ -8,7 +8,7 @@ var typed = new Typed(".text",{
 });
 
 var typed = new Typed(".text2",{
-    strings: ["Full Stack Web Developer"," AIML Engineer"],
+    strings: ["Full Stack Web Developer"," AIML Engineer","RPA Developer"],
     typeSpeed:50,
     backSpeed:70,
     backDelay:1000,
